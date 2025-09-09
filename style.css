@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+.background-wrapp
+{
+   background-image: url("./img/background.jpg");
+  /* background-repeat: no-repeat;
+  background-size: cover; */  
+  width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(1px);
+  box-shadow: inset 0 0 900px 120px rgba(0, 0, 0, 1);
+
+}
+
+
+/* Header Section */
+.header-section {
+  padding: 32px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 6rem;
+}
+
+.header-image img {
+  width: 9rem;
+  height: 2.5rem;
+}
+
+.header-right-bar {
+  margin-right: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-right-bar select {
+  padding: 6px 34px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: aliceblue;
+  border: 1px solid rgb(201, 190, 190);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.header-right-bar a {
+  margin-left: 15px;
+  padding: 6px 25px;
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.header-right-bar a:hover {
+  background-color: rgb(202, 27, 27);
+}
+
+/* Main Section */
+.main-container {
+  text-align: center;
+  /* margin-left:48%; */
+
+  margin-top: 6%;
+
+
+  /* transform: translateX(-50%); */
+  text-align: center;
+  color: white;
+}
+
+.main-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: -2.5px;
+}
+
+.subs-para {
+  font-size: 1.2rem;
+  font-weight: 600;
+
+}
+
+#prehead3
+{
+ color:#ffffff;
+ font-size: 16px;
+ font-weight: 100;
+ margin-top:2rem;
+ margin-bottom: 1rem;
+ text-align: center;
+ 
+}
+
+.login-page
+{
+  display:flex;
+  max-width: 90%;
+  margin-left: 20rem;
+
+}
+
+.login-page input
+{
+  /*position: relative;
+  */width: 40%;
+  font-size: 17px;
+  font-weight: 100;
+  color: white;
+  border: 1px solid gray;
+  background-color: rgba(33, 32, 32, 0.6);
+  border-radius: 5px;
+  padding: 16px 22px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+
+
+.login-page button{
+  font-size: 1.20rem;
+  /* position: absolute; */
+margin-left: 10px;
+   width: 22%;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: white;
+  background-color: red;
+   
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+.login-page button span{
+    font-weight: 300;
+}
+
+
+.login-page button:hover{
+  background-color: rgb(202, 27, 27);
+}
+/*  ........................this is a curve border fon special curve line css................................ */
+.curve-wrapper {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* More curved, thinner gradient line */
+.curve-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px; /* thinner */
+  background: linear-gradient(
+    to right,
+    #210d16 10%,
+    #b82869,
+    #e50914,
+    #b82869,
+    #210d16 90%
+  );
+  border-top-left-radius: 60% 120%;  /* more curve vertically */
+  border-top-right-radius: 60% 120%;
+  z-index: 2;
+}
+
+/* Cinematic shadow curve below */
+.curve-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: radial-gradient(
+    50% 500% at 50% -450%,
+    rgba(64, 97, 231, 0.4) 80%,
+    rgba(0, 0, 0, 0.1) 100%
+  ), black;
+  border-top-left-radius: 60% 120%;
+  border-top-right-radius: 60% 120%;
+  z-index: 1;
+}
+
+/* ...........................................................ending............................................... */
+
+.entertainment-section
+{
+  display: block;
+  padding-top: 2rem;
+  background-color: black;
+}
+
+.tv-show {
+ display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+
+gap: 110px;
+ padding:20px 40px;
+  background-color: black;
+  color: white;
+ 
+
+}
+
+
+.show-img video {
+  width: 80%;
+  height: 5%;
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(74, 3, 3, 0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.tv-show h1
+{
+    font-size:3rem;
+  text-align: center;
+  
+}
+
+.tv-show p
+{
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 25px;
+  margin-top: 1rem;
+
+}
+
+.tv-show img
+{
+  width: 75%;
+}
+
+.tv-show .stranger{
+  width: 80%;
+}
+
+/* ................................userquestion....................................... */
+
+
+.userQuestion
+{
+  color:#ffffff;
+ position: relative;
+ padding: 2rem 10rem;
+ width: 100%;
+
+  
+
+
+}
+
+.userQuestion h3
+{
+
+font-size: 25px;
+font-weight: 600;
+margin-bottom: 1rem;
+
+ 
+}
+
+.userQuest-btn button
+{
+  width: 100%;
+  text-align: left;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  margin-bottom: 8px;
+  border-style: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(49, 48, 48);
+  transition:  0.3s ease;
+  -webkit-transition:  0.3s ease;
+  -moz-transition:  0.3s ease;
+  -ms-transition:  0.3s ease;
+  -o-transition:  0.3s ease;
+
+}
+
+.userQuest-btn button:hover
+{
+  background-color: rgb(70, 68, 68);
+ 
+}
+
+.userQuest-btn button li{
+
+
+}
+
+.userQuest-btn button i{
+  font-size: 28px;
+ text-align: right;
+  font-weight: 400;
+  
+
+}
+
+
+.userQuestion .userAnswer
+{
+   background-color: rgb(49, 48, 48);
+   color: #ffffff;
+  margin-bottom: 8px;
+   margin-top:-0.4rem;
+   list-style: none;
+   font-size: 23px;
+   
+   padding: 2rem;
+  
+}
+
+
+.list {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.list.show {
+  display: block;
+}
+
+.info-btn i.rotate {
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+
+/* ...................this is header close part........................................... */
+
+#head3
+{
+ color:#ffffff;
+ font-size: 16px;
+ font-weight: 100;
+ margin-top: 4.5rem;
+ text-align: center;
+ 
+}
+
+
+
+.pre-login-page
+{
+  display:block;
+  max-width: 90%;
+ 
+ margin: auto;
+ justify-content:space-between;
+
+}
+
+.pre-login-page input
+{
+   position: relative;
+  width: 70%;
+font-size: 16px;
+ font-weight: 100;
+  color: white;
+  background-color:rgb(23, 22, 22);
+ 
+  padding: 16px 32px;
+  border: none;
+ 
+  
+  
+}
+
+
+
+
+.pre-login-page button{
+  font-size: 1.20rem;
+  position: absolute;
+  left:65%;
+   width: 16%;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: white;
+  background-color: red;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+.pre-login-page button span{
+    font-weight: 300;
+}
+
+
+.pre-login-page button:hover{
+  background-color: rgb(202, 27, 27);
+}
+
+
+/* .....................main header part........................................ */
+
+
+footer{
+  max-width: 90%;
+margin-left: 8rem;
+position: relative;
+
+}
+.info-gethr
+{
+color:rgb(201, 190, 190);
+  font-size: 14px;
+  margin-bottom: 2rem;
+   margin-top: 2rem;
+
+  /* max-width: 90%;
+margin: 2rem 8rem; */
+}
+
+.header-part
+{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 2.4rem;
+/* max-width: 90%;
+margin: 2rem 8rem; */
+
+}
+
+.header-part li
+{
+  margin: 10px;
+ 
+}
+
+.header-part li a{
+  font-size: 14px;
+  color:rgb(201, 190, 190);
+font-weight: -100;
+}
+
+
+.select-lang select
+{
+  padding: 7px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: aliceblue;
+  border: 1px solid rgb(201, 190, 190);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.netflix-india
+{
+ color:rgb(231, 218, 218);
+  font-size: 14px;
+  margin-bottom: 2rem;
+   margin-top: 2rem;
+
+}
+
+.security-notes
+{
+ color:rgb(201, 190, 190);
+  display:flex;
+    font-size: 14px;
+  padding-bottom: 8rem;
+}
+
+.security-notes a{
+  background-color: black;
+  border-style: none;
+  color: #ffffff;
+  text-decoration-line:none;
+  -moz-text-decoration-line:none;
+}
+
+.security-notes a::first-line
+
+{
+    color: blue;
+    list-style:1px solid blue;
+    text-decoration-line:underline;
+    -moz-text-decoration-line:underline;
+}
